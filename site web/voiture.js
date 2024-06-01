@@ -3,10 +3,10 @@ const voitures = [
       id: 1,
       marque: "Infinity",
       kilometrage : 4500,
-      modele: "G35",
-      annees: 2022,
+      modele: "Q50",
+      annees: 2023,
       coleur: "Noir",
-      prix: 25000
+      prix: 50000,
     },
     
   {
@@ -16,7 +16,8 @@ const voitures = [
       modele: "A45 AMG",
       annees: 2020,
       coleur: "Gris Nardo",
-      prix: 35000
+      prix: 35000,
+      image: "Voiture 2"
     },
     
   {
@@ -26,7 +27,7 @@ const voitures = [
       modele: "M3 pack M",
       annees: 2023,
       coleur: "Bleu",
-      prix: 45000
+      prix: 45000,
     }
   ];
 function AffichageInfo(voiture) {
@@ -37,6 +38,6 @@ function AffichageInfo(voiture) {
       <p>Coleur: ${voiture.coleur}</p>
       <p>Prix: ${voiture.prix} €</p>
     `;
-    document.getElementById("car-info").innerHTML = voitureInfoHTML;
+    document.getElementById("car-info").innerHTML= voitureInfoHTML;
 }
 
