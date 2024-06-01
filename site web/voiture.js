@@ -29,4 +29,14 @@ const voitures = [
       prix: 45000
     }
   ];
+function AffichageInfo(voiture) {
+    const voitureInfoHTML = `
+      <h2>${voiture.marque} ${voiture.modele}</h2>
+      <p>Année: ${voiture.annees}</p>
+      <p>Année: ${voiture.annees}</p>
+      <p>Coleur: ${voiture.coleur}</p>
+      <p>Prix: ${voiture.prix} €</p>
+    `;
+    document.getElementById("car-info").innerHTML = voitureInfoHTML;
+}
 
