@@ -12,26 +12,30 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #000000;
     padding: 20px;
     text-align: center;
-  }
+}
   
-  header img {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-    border-radius: 50%;
-  }
+header img {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
   
   header h1 {
     font-size: 24px;
-    margin-bottom: 10px;
+    text-align: center;
   }
   
   #car-info {
@@ -44,10 +48,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    word-break: break-all;
+    letter-spacing: 2px;
+    word-spacing: 10px;
   }
-  
   #car-info button {
-    background-color: #4CAF50;
+    background-color: var(--secondary-color);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -64,7 +70,8 @@
   }
   
   #car-info button:hover {
-    background-color: #3e8e41;
+    background-color: var(--primary-color);
+    color: #000000;
   }
   @media (max-width: 600px) {
     #car-info button {

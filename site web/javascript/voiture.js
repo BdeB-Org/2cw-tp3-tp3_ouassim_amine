@@ -24,19 +24,19 @@ const voitures = [
       id: 3,
       marque: "BMW",
       kilometrage : 200,
-      modele: "M3 pack M",
+      modele: "M8 pack M",
       annees: 2023,
       coleur: "Bleu",
-      prix: 45000,
+      prix: 65000,
     }
   ];
 function AffichageInfo(voiture) {
     const voitureInfoHTML = `
       <h2>${voiture.marque} ${voiture.modele}</h2>
-      <p>Kilométrage : ${voiture.kilometrage} Km </p>
-      <p>Année: ${voiture.annees}</p>
-      <p>Coleur: ${voiture.coleur}</p>
-      <p>Prix: ${voiture.prix} €</p>
+      <p> Kilométrage : ${voiture.kilometrage} Km  </p>
+      <p> Année: ${voiture.annees} </p>
+      <p> Coleur: ${voiture.coleur}</p>
+      <p> Prix: ${voiture.prix} €</p>
     `;
     document.getElementById("car-info").innerHTML= voitureInfoHTML;    
 }
