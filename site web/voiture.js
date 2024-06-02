@@ -33,11 +33,16 @@ const voitures = [
 function AffichageInfo(voiture) {
     const voitureInfoHTML = `
       <h2>${voiture.marque} ${voiture.modele}</h2>
-      <p>Année: ${voiture.annees}</p>
+      <p>Kilométrage : ${voiture.kilometrage} Km </p>
       <p>Année: ${voiture.annees}</p>
       <p>Coleur: ${voiture.coleur}</p>
       <p>Prix: ${voiture.prix} €</p>
     `;
-    document.getElementById("car-info").innerHTML= voitureInfoHTML;
+    document.getElementById("car-info").innerHTML= voitureInfoHTML;    
 }
-
+document.addEventListener("DOMContentLoaded", function() {
+  const btnRetour = document.getElementById("btn-retour");
+  btnRetour.addEventListener("click", function() {
+    window.location.href = document.referrer;
+  });
+});
