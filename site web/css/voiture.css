@@ -38,7 +38,7 @@ header img {
     text-align: center;
   }
   
-  #car-info {
+  #voiture-info {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
@@ -52,7 +52,7 @@ header img {
     letter-spacing: 2px;
     word-spacing: 10px;
   }
-  #car-info button {
+  #voiture-info button {
     background-color: var(--secondary-color);
     color: #fff;
     padding: 10px 20px;
@@ -62,25 +62,25 @@ header img {
     margin: 10px;
     width: calc(33.33% - 20px);
   }
-  #car-info button img {
+  #voiture-info button img {
     width: 200px; 
     height: 150px; 
     object-fit: cover; 
     border-radius: 5px 5px 0 0; 
   }
   
-  #car-info button:hover {
+  #voiture-info button:hover {
     background-color: var(--primary-color);
     color: #000000;
   }
   @media (max-width: 600px) {
-    #car-info button {
+    #voiture-info button {
       width: calc(50% - 20px);
     }
   }
   
   @media (max-width: 400px) {
-    #car-info button {
+    #voiture-info button {
       width: 100%;
     }
   }
